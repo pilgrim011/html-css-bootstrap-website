@@ -1,0 +1,120 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~normalize-scss/sass/normalize/_import-now.scss";
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+// your style goes here
+$darkblue: #445EA0;
+$yellow: #FFD400;
+$lightblue: #C0EBFB;
+$purple: #A687FB;
+$darkpurple: #7152C6;
+$red: #FE5B60;
+$blue: #2979FF;
+$grey: #999999;
+.m-custom{
+  left: 100px; 
+  width: calc(100% - 200px);
+  padding-top: 40px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.3125em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h4,
+  h5,
+  h6,
+  h6.special {
+    font-size: 0.6875em;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5em;
+    font-family: 'Rubik', Arial, serif ;
+  }
+  h2 {
+    font-size: 2.1875em;
+  }
+  h3 {
+    font-size: 1.75em;
+  }
+  h4 {
+    font-size: 1.5em;
+  }
+  h5 {
+    font-size: 1.3125em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  h6.special {
+    font-size: 0.6875em;
+  }
+}
+h2{
+  color: $grey;
+}
+
+
+
+
+
+.sidenav {
+  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.9);
+}
+.overlay.enabled {
+  display: initial;
+}
+
+
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: $red;
+  border-radius: 25%;
+  display: inline-block;
+}
+.red-box {
+  background-color: $red;
+  
+    opacity: 0.9;
+}
+.vertical{
+  margin-top:50%;
+  }
+  
+.nav-item{
+  text-align: right;
+}
+
